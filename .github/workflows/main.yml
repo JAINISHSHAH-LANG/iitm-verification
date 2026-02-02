@@ -1,0 +1,12 @@
+name: IITM Verification Action
+on: [push, workflow_dispatch]
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: 24f1002326@ds.study.iitm.ac.in
+        run: echo "Action triggered for student verification."
